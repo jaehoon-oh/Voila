@@ -47,7 +47,7 @@ def load_model(model_name, audio_tokenizer_path):
     model = cls.from_pretrained(
         model_name,
         torch_dtype=torch.bfloat16,
-        use_flash_attention_2=True,
+        # use_flash_attention_2=True,
         use_cache=True,
     )
     model = model.cuda()
